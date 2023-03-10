@@ -1,0 +1,102 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, li{
+  font-size: 1.1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+td{
+  font-size: 1.1rem;
+}
+
+.smallFont{
+  font-size: 1rem;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.accordionButton{
+  text-align: center;
+}
+
+/* Navbar styles */
+.navbar{
+  padding: 5px 30px;
+}
+
+.nav-item{
+  padding-left: 20px;
+}
+
+/* Title String styles */
+.titleText{
+  text-align: center;
+}
+
+.bodyDiv{
+  padding: 10px 20%;
+}
+
+.bodyDiv.directory{
+  padding: 10px 5%;
+}
+
+.inputItem{
+  padding: 5px 10%;
+}
+
+.mediumFont{
+  font-size: 1.1rem;
+}
+
+/* Input/Output Columns styles */
+.col-md-6.bodyDiv{
+  padding: 10px 10%;
+}
+
+.outputTableColumn{
+  padding: 0 5%;
+}
+
+table{
+  width: 100%;
+}
+
+.hiddenText{
+  visibility: hidden;
+  font-size: 0.1rem;
+}
+
+/* Input Section styles */
+.calcButton{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.inputBox{
+  width: 100%;
+  margin: 5px 0 10px 0;
+  padding: 0 0 0 10px;
+}
+
+.contactInput{
+  width:100%;
+}
+
+/* Reference Footer styles */
+.aboveFooter{
+  padding-block-end: 100px;
+}
+.refFooter{
+  position: fixed;
+  bottom: 0;
+}
