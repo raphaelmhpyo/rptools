@@ -81,6 +81,7 @@
           </div>
           <div class="container-fluid">
             <button type="button" class="btn btn-dark calcButton" name="calculate" onclick="paedCalculation()">Calculate</button>
+            <button type="button" class="btn btn-dark calcButton" onclick="show_pd_formulae()">Show formulae</button>
             <button type="button" class="btn btn-dark calcButton" name="reset" onclick="resetPage()">Reset</button>
           </div>
         </div>
@@ -94,51 +95,7 @@
 </body>
 <footer>
 <!-- Reference section  -->
-  <div class="accordion container-fluid refFooter" id="accordionPaedDoseReference">
-    <div class="card">
-      <div class="card-header" id="PaedDoseReference">
-        <h2 class="mb-0 accordionButton">
-          <button class="btn btn-link btn-small collapsed" type="button" data-toggle="collapse" data-target="#collapsePaedDoseReference" aria-expanded="false" aria-controls="collapsePaedDoseReference">
-            Show Formulae
-          </button>
-        </h2>
-      </div>
-
-      <div id="collapsePaedDoseReference" class="collapse" aria-labelledby="PaedDoseReference" data-parent="#accordionPaedDoseReference">
-        <div class="card-body bodyDiv">
-          Weight (kg) = (Age + 4) x 2
-          <br />sBP (mmHg) = 80 + (Age x 2)
-          <br /><br />Uncuffed ETT size = (Age/4) + 4
-          <br />Oral ETT depth (cm) = (Age/2) + 12
-          <br />LMA size:
-          <ul>
-            <li class="smallFont"><5kg: 1.0</li>
-            <li class="smallFont">5-10kg: 1.5</li>
-            <li class="smallFont">10-20kg: 2.0</li>
-            <li class="smallFont">20-30kg: 2.5</li>
-            <li class="smallFont">>30kg: 3.0</li>
-          </ul>
-          DC Shock: 4J/kg
-          <br />Amiodarone: 5mg/kg
-          <br />Adrenaline: 10mcg/kg
-          <br />Atropine: 20mcg/kg
-          <br />
-            <br />Fentanyl: 1-2mcg/kg
-            <br />Propofol: 4-6mg/kg
-            <br />Suxamethonium: 2mg/kg [IV], 4mg/kg [IM]
-            <br />Cefazolin: 50mg/kg
-            <br />
-            <br />Ondansetron: 0.15mg/kg
-            <br />Dexamethasone: 0.15mg/kg
-            <br />Paracetamol: 15mg/kg
-            <br />Ibuprofen: 10mg/kg
-            <br />Ketorolac: 2mg/kg
-            <br /><br />Crystalloid for shock: 20mL/kg
-            <br />pRBC to raise Hb by 10g/L: 4mL/kg
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </footer>
 <script src="index.js" charset="utf-8"></script>
 </html>

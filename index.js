@@ -344,37 +344,37 @@ function buttonClick(){
 
 function show_pd_formulae(){
   const txt = `
-          Weight (kg) : (Age + 4) x 2
-          sBP (mmHg)  : 80 + (Age x 2)
+          Weight (kg): (Age + 4) x 2
+          sBP (mmHg): 80 + (Age x 2)
           
-          Uncuffed ETT size   : (Age/4) + 4
-          Oral ETT depth (cm) : (Age/2) + 12
+          Uncuffed ETT size: (Age/4) + 4
+          Oral ETT depth (cm): (Age/2) + 12
           
           LMA size:
-           - <5kg   : 1.0
-           - 5-10kg : 1.5
+           - <5kg: 1.0
+           - 5-10kg: 1.5
            - 10-20kg: 2.0
            - 20-30kg: 2.5
-           - >30kg  : 3.0
+           - >30kg: 3.0
           
-          DC Shock  : 4J/kg
+          DC Shock: 4J/kg
           Amiodarone: 5mg/kg
           Adrenaline: 10mcg/kg
-          Atropine  : 20mcg/kg
+          Atropine: 20mcg/kg
           
-          Fentanyl  : 1-2mcg/kg
-          Propofol  : 4-6mg/kg
-          Sux       : 2mg/kg [IV], 4mg/kg [IM]
-          Cefazolin : 50mg/kg
+          Fentanyl: 1-2mcg/kg
+          Propofol: 4-6mg/kg
+          Suxamethonium: 2mg/kg [IV], 4mg/kg [IM]
+          Cefazolin: 50mg/kg
           
-          Ondansetron   : 0.15mg/kg
-          Dexamethasone : 0.15mg/kg
-          Paracetamol   : 15mg/kg
-          Ibuprofen     : 10mg/kg
-          Ketorolac     : 2mg/kg
+          Ondansetron: 0.15mg/kg
+          Dexamethasone: 0.15mg/kg
+          Paracetamol: 15mg/kg
+          Ibuprofen: 10mg/kg
+          Ketorolac: 2mg/kg
           
-          Crystalloid for shock     : 20mL/kg
-          pRBC to raise Hb by 10g/L : 4mL/kg
+          Crystalloid for shock: 20mL/kg
+          pRBC to raise Hb by 10g/L: 4mL/kg
         `
   alert(txt);
 }
