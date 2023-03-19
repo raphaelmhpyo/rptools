@@ -85,6 +85,8 @@
           </div>
           <div class="container-fluid">
             <button type="button" class="btn btn-dark calcButton" name="calculate" onclick="bodyWeightCalculation()">Calculate</button>
+            <button type="button" class="btn btn-dark calcButton" onclick="show_bw_formulae()">SOBA recommendations for drugs</button>
+            <button type="button" class="btn btn-dark calcButton" onclick="go_soba()">SOBA guideline</button>
             <button type="button" class="btn btn-dark calcButton" name="reset" onclick="resetPage()">Reset</button>
           </div>
         </div>
@@ -99,45 +101,7 @@
 
 <footer>
   <!-- Reference section  -->
-  <div class="accordion container-fluid refFooter" id="accordionLARef">
-    <div class="card">
-      <div class="card-header" id="LARef">
-        <h2 class="mb-0 accordionButton">
-          <button class="btn btn-link btn-small collapsed" type="button" data-toggle="collapse" data-target="#collapseLARef" aria-expanded="false" aria-controls="collapseLARef">
-            Show SOBA Recommendation
-          </button>
-        </h2>
-      </div>
-
-      <div id="collapseLARef" class="collapse" aria-labelledby="LARef" data-parent="#accordionLARef">
-        <div class="card-body bodyDiv">
-          <a href="https://www.sobauk.co.uk/_files/ugd/373d41_eebe369c3c6b4021bff6f3da059aa796.pdf">[PDF] SOBA Guideline</a>
-          <br>Lean Body Weight:
-          <ul>
-            <li class="smallFont">Propofol induction</li>
-            <li class="smallFont">Fentanyl and Alfentanil</li>
-            <li class="smallFont">Morphine</li>
-            <li class="smallFont">Non-depolarising NMBDs</li>
-            <li class="smallFont">Paracetamol</li>
-            <li class="smallFont">Local Anaesthetics</li>
-          </ul>
-          Adjusted Body Weight:
-          <ul>
-            <li class="smallFont">Propofol infusion</li>
-            <li class="smallFont">Neostigmine</li>
-            <li class="smallFont">Sugammadex</li>
-            <li class="smallFont">Antibiotics</li>
-          </ul>
-          Total Body Weight:
-          <ul>
-            <li class="smallFont">Suxamethonium</li>
-            <li class="smallFont">LMWHs</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
 </footer>
 <script src="index.js" charset="utf-8"></script>
 </html>

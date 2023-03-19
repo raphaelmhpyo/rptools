@@ -97,6 +97,7 @@
           </div>
           <div class="container-fluid">
             <button type="button" class="btn btn-dark calcButton" name="calculate" onclick="localAnaesCalculation()">Calculate</button>
+            <button type="button" class="btn btn-dark calcButton" onclick="show_la_formulae()">Show formulae</button>
             <button type="button" class="btn btn-dark calcButton" name="reset" onclick="resetPage()">Reset</button>
           </div>
         </div>
@@ -111,33 +112,7 @@
 
 <footer>
   <!-- Reference section  -->
-  <div class="accordion container-fluid refFooter" id="accordionLARef">
-    <div class="card">
-      <div class="card-header" id="LARef">
-        <h2 class="mb-0 accordionButton">
-          <button class="btn btn-link btn-small collapsed" type="button" data-toggle="collapse" data-target="#collapseLARef" aria-expanded="false" aria-controls="collapseLARef">
-            Show Formulae
-          </button>
-        </h2>
-      </div>
 
-      <div id="collapseLARef" class="collapse" aria-labelledby="LARef" data-parent="#accordionLARef">
-        <div class="card-body bodyDiv">
-          Ropivacaine = 3mg/kg
-          <br />Bupivacaine = 2mg/kg
-          <br />Levobupivacaine = 2.5mg/kg
-          <br />Lidocaine without adrenaline = 3mg/kg
-          <br />Lidocaine with adrenaline = 7mg/kg
-          <br />Lidocaine for airway topicalisation = 8mg/kg
-          <br>Lean Body Weight (Janmahasatian):
-          <ul>
-            <li class="smallFont">Female: (9270 x TBW) / (8780 + (224 x BMI))</li>
-            <li class="smallFont">Male: (9270 x TBW) / (6680 + (216 x BMI))</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </footer>
 <script src="index.js" charset="utf-8"></script>
