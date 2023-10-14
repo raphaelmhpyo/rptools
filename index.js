@@ -13,9 +13,11 @@ function rotemInterpreter() {
   const extemA5 = Number($("#extemA5Entered").val());
   const extemCT = Number($("#extemCTEntered").val());
   var txa = "Not needed";
+  var hyperfib = false;
   
   if ($("#txa").is(":checked")) {
-    txa = "1g"  
+    txa = "1g"
+    hyperfib = true;
   };
   
   var cryo = "Not needed";
@@ -42,6 +44,15 @@ function rotemInterpreter() {
   };
 
   var dictRotem = {
+    "Entered variables": " ",
+    "______________________________  ":"_________",
+    "FIBTEM A5": fibtemA5 + " mm",
+    "EXTEM A5": extemA5 + " mm",
+    "EXTEM CT": extemCT + " s",
+    "PPH, Trauma or Hyperfibrinolysis": hyperfib,
+    "______________________________": "__________",
+    "Products indicated": "  ",
+    "______________________________ ": "__________ ",
     "TXA": txa,
     "Cryoprecipitate": cryo,
     "Platelets": platelets,
