@@ -2,6 +2,60 @@
 //
 //
 // ------------------------------------------------
+// ROTEM Interpreter Below
+// ------------------------------------------------
+//
+//
+//
+function rotemInterpreter() {
+
+  const fibtemA5 = Number($("#fibtemA5Entered").val());
+  const extemA5 = Number($("#extemA5Entered").val());
+  const extemCT = Number($("#extemCTEntered").val());
+  var txa = "Not needed";
+  
+  if ($("#txa").is(":checked")) {
+    txa = "1g"  
+  };
+  
+  var cryo = "Not needed";
+  var platelets = "Not needed";
+  var ffp = "Not needed";
+  
+  
+  if (fibtemA5 < 10){
+    cryo = "10 Units"
+  };
+
+  if (extemA5 < 35){
+    platelets = "1 Bag"
+  };
+
+  if (extemCT > 80){
+    if (fibtemA5 >= 10){
+      ffp = "2 Units"
+    } else {
+      if (extemCT > 140){
+        ffp = "2 Units"
+      }
+    }
+  };
+
+  var dictRotem = {
+    "TXA": txa,
+    "Cryoprecipitate": cryo,
+    "Platelets": platelets,
+    "FFP": ffp
+  };
+
+  // Create a table to display the output
+  generateTable(".rotemOutput", dictRotem);
+
+}
+//
+//
+//
+// ------------------------------------------------
 // Local Anaesthetic Calculation Below
 // ------------------------------------------------
 //
