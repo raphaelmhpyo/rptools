@@ -476,3 +476,7 @@ Adjusted Body Weight:
 function go_soba(){
   window.open("https://www.sobauk.co.uk/_files/ugd/373d41_eebe369c3c6b4021bff6f3da059aa796.pdf", '_blank').focus();
 }
+
+function go_rotem_guide(){
+  window.open("https://raphaelmhpyo.github.io/rptools/rotem-guide.html", '_blank').focus();
+}
