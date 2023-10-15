@@ -26,7 +26,15 @@ function rotemInterpreter() {
   
   
   if (fibtemA5 < 10){
-    cryo = "10 Units"
+    if (12 - fibtemA5 <= 3){
+      cryo = "10 Units"
+    } else if (12 - fibtemA5 >3 && 12 - fibtemA5 <= 5){
+      cryo = "15 Units"
+    } else if (12 - fibtemA5 >5 && 12 - fibtemA5 <= 8){
+      cryo = "20 Units"
+    } else if (12 - fibtemA5 >8){
+      cryo = "25 Units"
+    }
   };
 
   if (extemA5 < 35){
