@@ -323,10 +323,10 @@ function bodyWeightCalculation(){
     // Calculated variables
     var bmi = tbw / height**2;
     if (sex === 'male'){
-        var ibw = height*100 - 100;
+        var ibw = ((height/2.54)-60)*2.3 + 50;
         var lbw = Math.round((9370 * tbw) / (6680 + (216 * bmi)));
     } else if (sex === 'female') {
-        var ibw = height*100 - 105;
+        var ibw = ((height/2.54)-60)*2.3 + 45.5;
         var lbw = Math.round((9270 * tbw) / (8780 + (224 * bmi)));
     }
     abw = ibw + 0.4*(tbw-ibw)
@@ -335,7 +335,7 @@ function bodyWeightCalculation(){
     var dictBodyWeight = {
         "BMI": bmi.toFixed(0),
         "Total body weight": tbw + " kg",
-        "Ideal body weight": ibw + " kg",
+        "Ideal body weight (Devine)": ibw + " kg",
         "Lean body weight": lbw + " kg",
         "Adjusted body weight": abw + " kg"
     }
